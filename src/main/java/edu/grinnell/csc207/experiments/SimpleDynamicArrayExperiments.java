@@ -41,12 +41,12 @@ public class SimpleDynamicArrayExperiments {
     PrintWriter pen = new PrintWriter(System.out, true);
     DynamicArray<BigInteger> numbers =
         new SimpleDynamicArray<BigInteger>();
-
+   
     // Set some values
     for (int i = 0; i < 10; i++) {
       numbers.set(i, BigInteger.valueOf(i));
     } // for i
-
+  
     // Get some values
     for (int i = 0; i < 10; i++) {
       pen.println("numbers[" + i + "] = " + numbers.get(i));
@@ -56,5 +56,19 @@ public class SimpleDynamicArrayExperiments {
     for (int i = 0; i < 10; i++) {
       pen.println(numbers.get(i) + "^2 = " + square(numbers.get(i)));
     } // for i
+
+    DynamicArray<String> strings = new SimpleDynamicArray<String>();
+    for (int i = 0; i < 10; i++) {
+      strings.set(i, "losing my mind.");
+    } // for i
+
+
+    for (int i = 0; i < 10; i++) {
+      pen.println("strings[" + i + "] = " + strings.get(i));
+    } // for
+
+
+
+
   } // main(String[])
 } // class SimpleDynamicArrayExperiment

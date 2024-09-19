@@ -54,7 +54,14 @@ public class SimpleDynamicArray<T> implements DynamicArray<T> {
         newsize *= 2;
       } // while
       this.values = Arrays.copyOf(this.values, newsize);
-    } // if the array is no big enough
+    }
+
+    // if (this.values.length <= i )
+    //  {
+    //   System.err.println("The array did not expand.");
+    // }
+  
+    // if the array is no big enough
     // And set the values
     this.values[i] = val;
   } // set(int, T)
